@@ -4,6 +4,10 @@ apply plugin: 'application'
 
 mainClassName = 'hello.HelloWorld'
 
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.13'
+}
+
 // tag::repositories[]
 repositories { 
     mavenCentral() 
